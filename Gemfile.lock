@@ -137,6 +137,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.2-x86_64-darwin)
       racc (~> 1.4)
+    pg (1.4.5)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -255,6 +256,7 @@ DEPENDENCIES
   faker
   importmap-rails
   jbuilder
+  pg
   pry
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
