@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   ## For external API
   get '/api/encode', defaults: { format: 'json' }, to: 'api/external/links#encode'
   get '/api/decode', defaults: { format: 'json' }, to: 'api/external/links#decode'
+
+  get '*path', to: redirect { |params, request| RedirectRouteHelper.redirect(params, request) }
 end

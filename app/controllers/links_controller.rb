@@ -24,8 +24,6 @@ class LinksController < BaseController
     link = request.params[:original_url] || request.params[:short_url]
 
     return render_error_json(message: 'param is empty') if link.blank?
-
-    # return render_error_json(message: 'URL is invalid') unless isValidURL?(link)
   end
 
   def isValidURL?(link)
