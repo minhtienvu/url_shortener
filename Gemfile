@@ -48,6 +48,11 @@ gem "bootsnap", require: false
 # install pry gem to debug
 gem 'pry'
 
+# Use JSON Web Tokens for authentication
+gem 'jwt'
+
+gem 'bcrypt'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"

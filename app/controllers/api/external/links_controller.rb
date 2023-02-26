@@ -1,5 +1,7 @@
 class Api::External::LinksController < Api::External::ApplicationController
 
+  before_action :authenticate_request, only: [:encode, :decode]
+
   before_action :validate_url_link_valid!, only: [:encode, :decode]
 
   def encode

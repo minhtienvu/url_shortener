@@ -7,12 +7,15 @@ Rails.application.routes.draw do
   root to: 'links#index'
 
   post '/index', defaults: { format: 'json' }, to: 'links#index'
-  post '/encode',defaults: { format: 'json' }, to: 'links#encode'
+  post '/encode', defaults: { format: 'json' }, to: 'links#encode'
   get '/decode', defaults: { format: 'json' }, to: 'links#decode'
 
   ## For external API
   get '/api/encode', defaults: { format: 'json' }, to: 'api/external/links#encode'
   get '/api/decode', defaults: { format: 'json' }, to: 'api/external/links#decode'
+
+  resources :users
+  post '/api/auth/login', to: 'api/external/authentication#login'
 
   get '*path', to: redirect { |params, request| RedirectRouteHelper.redirect(params, request) }
 end
