@@ -1,0 +1,15 @@
+current directory: /Users/minhtienvu/Desktop/code/rails/oivan_url_shortener/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/minhtienvu/.rbenv/versions/3.1.3/bin/ruby -I /Users/minhtienvu/.rbenv/versions/3.1.3/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/minhtienvu/Desktop/code/rails/oivan_url_shortener/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230226-72158-ky4d2u sitelibdir\=./.gem.20230226-72158-ky4d2u clean
+
+current directory: /Users/minhtienvu/Desktop/code/rails/oivan_url_shortener/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230226-72158-ky4d2u sitelibdir\=./.gem.20230226-72158-ky4d2u
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/minhtienvu/Desktop/code/rails/oivan_url_shortener/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230226-72158-ky4d2u sitelibdir\=./.gem.20230226-72158-ky4d2u install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20230226-72158-ky4d2u
