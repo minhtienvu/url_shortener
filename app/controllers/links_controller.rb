@@ -1,33 +1,35 @@
 class LinksController < BaseController
-  before_action :validate_url_link_valid!, only: [:encode, :decode]
+
+  before_action :validate_url_link_valid, only: [:encode, :decode]
 
   def index
   end
 
   def encode
-    validate_url_link_valid!
-
     result = EncodeUrl.new(request).generate
-    return render_data(result)
+
+    if result[:short_url]
+      return render_data(result, 'Encode url successfully!')
+    else
+      return render_error_json('Fail to encode!!')
+    end
   end
 
   def decode
-    validate_url_link_valid!
-
     result = DecodeUrl.new(request).generate
-    return render_data(result)
+
+    if result[:original_url]
+      return render_data(result, 'Decode url successfully!')
+    else
+      return render_error_json('Fail to decode!!')
+    end
   end
 
   private
 
-  def validate_url_link_valid!
-    link = request.params[:original_url] || request.params[:short_url]
+  def validate_url_link_valid
+    url_param = request.params[:original_url] || request.params[:short_url]
 
-    return render_error_json(message: 'param is empty') if link.blank?
-  end
-
-  def isValidURL?(link)
-    pattern = Link::URL_PATTERN
-    !!(link =~ pattern)
+    return render_error_json('param is empty') if url_param.blank?
   end
 end

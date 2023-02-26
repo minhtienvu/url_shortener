@@ -10,7 +10,7 @@ class DecodeUrl
     link = Link.find_by(short_url: short_link)
 
     if link
-      return GenerateResponse.generate_object(link, 'Decoding short link successfully!')
+      return GenerateResponse.generate_object(link)
     else
       return GenerateResponse.generate_error('There is no short url in database')
     end

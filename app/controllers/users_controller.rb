@@ -3,19 +3,20 @@ class UsersController < BaseController
 
   def index
     @users = User.all
-    return render_data(@users)
+    return render_data(@users, 'Get all users successfully!')
   end
 
   def show
-    return render_data(@user)
+    return render_data(@user, 'Get user info successfully!')
   end
 
   def create
     @user = User.new(user_params)
+    
     if @user.save
-      return render_data(@user)
+      return render_data(@user, 'Create user successfully!')
     else
-      return render_error_json('Create user unsuccessfully!')
+      return render_error_json(@user.errors.full_messages)
     end
   end
 
@@ -26,7 +27,11 @@ class UsersController < BaseController
   end
 
   def destroy
-    @user.destroy
+    if @user.destroy
+      return render_data({ message: 'Delete user successfully!' })
+    else
+      return render_error_json('Delete user unsuccessfully!')
+    end
   end
 
   private
@@ -36,6 +41,7 @@ class UsersController < BaseController
   end
 
   def set_user
-    @user = User.find(params[:id])
+    @user = User.find_by(params[:id])
+    return render_error_json("Counldn't find user with id = #{params[:id]}") unless @user
   end
 end

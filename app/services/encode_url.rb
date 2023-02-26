@@ -6,16 +6,16 @@ class EncodeUrl
   end
 
   def generate
-    link = Link.find_by(original_url: @original_url)
-    return GenerateResponse.generate_object(link, 'Link is shortened') if link
+    result = Link.find_by(original_url: @original_url)
+    return GenerateResponse.generate_object(result) if result
 
     short_url = generate_short_url(generate_hash)
     expiration_date = generate_expiration_date
 
-    link = Link.new(original_url: @original_url, short_url: short_url, expiration_date: expiration_date)
+    result = Link.new(original_url: @original_url, short_url: short_url, expiration_date: expiration_date)
 
-    if link.save
-      GenerateResponse.generate_object(link, 'Creating short link successfully!')
+    if result.save
+      GenerateResponse.generate_object(result)
     else
       GenerateResponse.generate_error('Creating short link unsuccessfully!')
     end

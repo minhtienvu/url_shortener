@@ -1,10 +1,9 @@
 module GenerateResponse
-  def self.generate_object(link, message)
+  def self.generate_object(object)
     {
-      message: message,
-      original_url: link.original_url,
-      short_url: link.short_url,
-      expiration_date: link.expiration_date
+      original_url: object.original_url,
+      short_url: object.short_url,
+      expiration_date: object.expiration_date
     }
   end
 

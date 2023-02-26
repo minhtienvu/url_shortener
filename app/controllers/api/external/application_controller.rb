@@ -3,13 +3,14 @@ class Api::External::ApplicationController < ActionController::API
 
   before_action :authenticate_request
 
-  def render_data(data)
+  def render_data(data, message)
     render json: {
+      message: message,
       data: data
     }
   end
 
-  def render_error_json(message:)
+  def render_error_json(message)
     render json: {
       message: message
     }
@@ -22,7 +23,5 @@ class Api::External::ApplicationController < ActionController::API
     header = header.split(' ').last if header
     decoded = jwt_decode(header)
     return render json: { error: 'Permission denied!!' } unless decoded
-
-    @current_user = User.find(decoded[:user_id])
   end
 end
