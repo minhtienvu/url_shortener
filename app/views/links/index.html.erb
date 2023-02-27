@@ -1,5 +1,6 @@
 <div class="container mt-5">
 
+  <h1>URL Shortener</h3>
   <div class="container mt-3">
     <%= form_with url: encode_path, html: { class: 'form-inline' }, method: :post do |form| %>
       <div class="row">
@@ -25,4 +26,7 @@
       </div>
     <% end %>
   </div>
+
+  <hr>
+  <h5>Created by: <a href="https://tienvm.com/" target="_blank">tienvm.com</a></h3>
 </div>

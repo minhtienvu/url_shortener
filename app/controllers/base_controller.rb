@@ -7,7 +7,7 @@ class BaseController < ApplicationController
     }
   end
 
-  def render_error_json(message)
+  def render_error(message)
     render json: {
       message: message
     }
