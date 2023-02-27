@@ -28,7 +28,7 @@ class UsersController < BaseController
 
   def destroy
     if @user.destroy
-      return render_data(@user, 'Delete user successfully!')
+      return render_data({}, 'Delete user successfully!')
     else
       return render_error('Delete user unsuccessfully!')
     end
@@ -41,7 +41,7 @@ class UsersController < BaseController
   end
 
   def set_user
-    @user = User.find_by(params[:id])
+    @user = User.find_by(id: params[:id])
     return render_error("Counldn't find user with id = #{params[:id]}") unless @user
   end
 end
