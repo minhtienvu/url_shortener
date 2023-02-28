@@ -126,4 +126,5 @@ I attached my Postman collection on this project. You can [download at this link
 ### Scalability
 - To avoid the duplicate shortened urls when creating, we can use a longer hash with 8, 10 characters, or more than that to reduce the times of query whether it existed or not in `encode step`. More hashes we can create, the fewer times it duplicates.
 - For a shortened URL system, the ratio of reading data is normally higher than creating new shortened URLs. To increase the speed of retrieving data from the database. I suggest using a Cache system like `Redis` to save `original_url and short_url` information to increase the speed of retrieving existing data.
+- When database is large, there is a numerous shortened URLs less used, so we can set an expiration date and soft delete when URLs expired.
 - With hundred thousands/millions of requests per day, we should consider using `a load balancer` to distribute our requests to avoid overloading the server. If we use MySQL, we can consider using `Mysql Replication` to duplicate database records to stay consistent in data.
