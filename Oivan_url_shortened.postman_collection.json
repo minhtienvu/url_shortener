@@ -54,7 +54,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2Nzc1NjkxMzh9.hRlTWyCO4khQMGq2Q-09r5yudFfOxirRDjTn_1KO5Dc",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2Nzc1NzMzOTR9.x30syWOzAkPAvzu7itIvZ-g-tQpR-P2IfVChDiKJFbM",
 									"type": "string"
 								}
 							]
@@ -62,7 +62,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/decode?short_url=http://localhost:3000/RZCtff",
+							"raw": "http://localhost:3000/api/decode?short_url=http://localhost:3000/LmL7Be",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -75,7 +75,7 @@
 							"query": [
 								{
 									"key": "short_url",
-									"value": "http://localhost:3000/RZCtff"
+									"value": "http://localhost:3000/LmL7Be"
 								}
 							]
 						}
@@ -93,7 +93,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2Nzc1NjkxMzh9.hRlTWyCO4khQMGq2Q-09r5yudFfOxirRDjTn_1KO5Dc",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2Nzc1NzMzOTR9.x30syWOzAkPAvzu7itIvZ-g-tQpR-P2IfVChDiKJFbM",
 									"type": "string"
 								}
 							]
@@ -111,7 +111,7 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/encode?original_url=https://guides.rubyonrails.org/routing.html",
+							"raw": "http://localhost:3000/api/encode?original_url=https://itviec.com/companies/oivan",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -124,7 +124,7 @@
 							"query": [
 								{
 									"key": "original_url",
-									"value": "https://guides.rubyonrails.org/routing.html"
+									"value": "https://itviec.com/companies/oivan"
 								},
 								{
 									"key": "",
@@ -142,7 +142,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/decode?short_url=http://localhost:3000/RZCtff",
+							"raw": "http://localhost:3000/decode?short_url=http://localhost:3000/eoVgKb",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -154,7 +154,7 @@
 							"query": [
 								{
 									"key": "short_url",
-									"value": "http://localhost:3000/RZCtff"
+									"value": "http://localhost:3000/eoVgKb"
 								}
 							]
 						}
@@ -312,7 +312,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2Nzc1NTE1ODZ9.BWYPfg3YQdgDYhTQM6JETFaLQXmX9Ymw4huHe0IkzZw",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Nzc1NzMzMzh9.Op-nsrEkkdMpChG9BsdovRsqsIP202HCr6VGphEI5sk",
 									"type": "string"
 								}
 							]
@@ -320,7 +320,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://oivan.herokuapp.com/api/decode?short_url=http://localhost:3000/RZCtff",
+							"raw": "https://oivan.herokuapp.com/api/decode?short_url=https://oivan.herokuapp.com/Y65FwS",
 							"protocol": "https",
 							"host": [
 								"oivan",
@@ -334,7 +334,7 @@
 							"query": [
 								{
 									"key": "short_url",
-									"value": "http://localhost:3000/RZCtff"
+									"value": "https://oivan.herokuapp.com/Y65FwS"
 								}
 							]
 						}
@@ -352,7 +352,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2Nzc1NTE1ODZ9.BWYPfg3YQdgDYhTQM6JETFaLQXmX9Ymw4huHe0IkzZw",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Nzc1NzMzMzh9.Op-nsrEkkdMpChG9BsdovRsqsIP202HCr6VGphEI5sk",
 									"type": "string"
 								}
 							]
@@ -370,7 +370,7 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "https://oivan.herokuapp.com/api/encode?original_url=https://guides.rubyonrails.org/routing.html",
+							"raw": "https://oivan.herokuapp.com/api/encode?original_url=https://itviec.com/companies/oivan",
 							"protocol": "https",
 							"host": [
 								"oivan",
@@ -384,7 +384,7 @@
 							"query": [
 								{
 									"key": "original_url",
-									"value": "https://guides.rubyonrails.org/routing.html"
+									"value": "https://itviec.com/companies/oivan"
 								},
 								{
 									"key": "",
@@ -402,7 +402,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://oivan.herokuapp.com/decode?short_url=http://localhost:3000/RZCtff",
+							"raw": "https://oivan.herokuapp.com/decode?short_url=https://oivan.herokuapp.com/Y65FwS",
 							"protocol": "https",
 							"host": [
 								"oivan",
@@ -415,7 +415,7 @@
 							"query": [
 								{
 									"key": "short_url",
-									"value": "http://localhost:3000/RZCtff"
+									"value": "https://oivan.herokuapp.com/Y65FwS"
 								}
 							]
 						}
