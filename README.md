@@ -112,12 +112,12 @@ I attached my Postman collection on this project. You can [download at this link
 #### For public features
    * You can use some features without creating an account at [these list](https://github.com/minhtienvu/url_shortener/edit/master/README.md#public-features).
 #### For API features(particularly `/api/encode` and `/api/decode`)
-   - You need to follow these steps as a new user:
-       1. Create a new account (If you already have one, skip this step. Next step 2).
-       2. Login with your created account to get a new token in API `/api/auth/login`.
-       3. In the Postman application, Choose `Authorization -> Type -> Bearer Token` -> Insert your token step 2 in `Token` input. Then insert your params according to `encode` or `decode` function to call API.
+   * You need to follow these steps as a new user:
+       * **Step 1**. Create a new account (If you already have one, skip this step. Next step 2).
+       * **Step 2**. Login with your created account to get a new token in API `/api/auth/login`.
+       * **Step 3**. In the Postman application, Choose `Authorization -> Type -> Bearer Token` -> Insert your token step 2 in `Token` input. Then insert your params according to `encode` or `decode` function to call API.
            *  If you have `Permission denied!!` error which means your token is expired, please use API `/api/auth/login` again to get a new token(I only set 10 minutes for the token in my project).
-       4. You can use a shortened URL on the browser. It will redirect to your original URL if it has been encoded and exists in the database.
+       * **Step 4**. You can use a shortened URL on the browser. It will redirect to your original URL if it has been encoded and exists in the database.
 
 
 ### Security
