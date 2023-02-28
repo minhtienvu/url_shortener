@@ -16,11 +16,11 @@
 * `/decode`
     * For the decode function, we will query the database to get its original URL relies on a shortened link. I use RDBMS to read this information from the database. However, with an application not relying much on associations with other tables, I recommend using the `Redis` database to increase read-function speed and decrease latency.
 ##### API
-* For API functions(`encode and decode`). I suppose we give these APIs to a third party or to the front-tend team in a microservice system. We need to use at least one security layer to ensure the authorized User uses our API. In my project, I use `JSON Web Tokens(JWT)` to generate authentication JWT to verify authorized Users when calling my API features.
+* For API functions(`encode and decode`). I suppose we give these APIs to a third party or to the front-tend team in a microservice system. We need to use at least one security layer to ensure the authorized User uses our API. In my project, I use `JSON Web Tokens(JWT)` to generate authentication JWT to verify authorized users when calling my API features.
 * For authentication, I set the token working only 10 minutes to easily raise an `Unauthorized` error if the token expired.
 
 ##### Redirection function
-* When Users access a shortened link on the browser. I want to check whether this URL is valid or not and redirect back to its original URL if it is valid and exists in my system. I will customize my routes to do this function.
+* When users access a shortened link on the browser. I want to check whether this URL is valid or not and redirect back to its original URL if it is valid and exists in my system. I will customize my routes to do this function.
 
 ##### Deployment
 * I will deploy this project on Heroku.
@@ -35,7 +35,6 @@ If you clone this project and run it on your local. Ensure your laptop/computer 
 * Rails 7.0.4
 * Ruby 3.1.3
 
-How to test my application
 ### Installation
 1. Clone this project
 2. Run `rake db:migrate`
@@ -81,7 +80,7 @@ How to test my application
     * Method: DELETE
 #### API External
 * Login
-    * Description: Get a new token from your email and password. The token is valid for 10 minutes.
+    * Description: Get a new token from your email and password(The token is valid for 10 minutes). Use this token to call API `/api/encode` and `/api/decode`
     * URL: `/api/auth/login`
     * Method: POST
     * Params
@@ -128,4 +127,3 @@ I attached my Postman collection on this project. You can [download at this link
 - To avoid the duplicate shortened urls when creating, we can use a longer hash with 8, 10 characters, or more than that to reduce the times of query whether it existed or not in `encode step`. More hashes we can create, the fewer times it duplicates.
 - For a shortened URL system, the ratio of reading data is normally higher than creating new shortened URLs. To increase the speed of retrieving data from the database. I suggest using a Cache system like `Redis` to save `original_url and short_url` information to increase the speed of retrieving existing data.
 - With hundred thousands/millions of requests per day, we should consider using `a load balancer` to distribute our requests to avoid overloading the server. If we use MySQL, we can consider using `Mysql Replication` to duplicate database records to stay consistent in data.
-- We can use `microservice architecture` to separate our systems into separated components to maintain and divide responsibilities clearly.
