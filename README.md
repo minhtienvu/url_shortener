@@ -110,7 +110,7 @@ I attached my Postman collection on this project. You can [download at this link
 - `Heroku` collection: If you want to use my project on the Heroku server
 
 #### For public features
-   * You can use some features without creating an account at [these list](https://github.com/minhtienvu/url_shortener/edit/master/README.md#public-features).
+   * You can use some features without creating an account at [these list](https://github.com/minhtienvu/url_shortener/blob/master/README.md#public-features).
 #### For API features(particularly `/api/encode` and `/api/decode`)
    * You need to follow these steps as a new user:
        * **Step 1**. Create a new account (If you already have one, skip this step. Next step 2).
