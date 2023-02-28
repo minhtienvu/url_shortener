@@ -2,7 +2,7 @@
 
   <h1>URL Shortener</h3>
   <div class="container mt-3">
-    <%= form_with url: encode_path, html: { class: 'form-inline' }, method: :post do |form| %>
+    <%= form_with url: encode_path, html: { class: 'form-inline' }, method: :get do |form| %>
       <div class="row">
         <div class="col">
           <%= form.text_field :original_url, class: 'form-control', placeholder: 'Enter original_link here' %>
