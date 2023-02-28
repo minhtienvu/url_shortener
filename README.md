@@ -111,6 +111,7 @@ I attached my Postman collection on this project. You can [download at this link
 
 #### For public features
    * You can use some features without creating an account at [these list](https://github.com/minhtienvu/url_shortener/blob/master/README.md#public-features).
+      * I only create simple UI for public `encode` and `decode` features, you can check in at [this link](https://oivan.herokuapp.com/)
 #### For API features(particularly `/api/encode` and `/api/decode`)
    * You need to follow these steps as a new user:
        * **Step 1**. Create a new account (If you already have one, skip this step. Next step 2).
