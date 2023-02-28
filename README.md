@@ -111,8 +111,9 @@ I attached my Postman collection on this project. You can [download at this link
 
 #### For public features
    * You can use some features without creating an account at [these list](https://github.com/minhtienvu/url_shortener/blob/master/README.md#public-features).
-      * I only create simple UI for public `encode` and `decode` features, you can check in at [this link](https://oivan.herokuapp.com/)
+      * I only create simple UI for public `encode` and `decode` features, you can check in at [this link](https://oivan.herokuapp.com/) and watch basic flows on [Youtube video](https://www.youtube.com/watch?v=7BCyfF0GMIY&ab_channel=V%C5%A9MinhTi%E1%BA%BFn) which I posted
 #### For API features(particularly `/api/encode` and `/api/decode`)
+   * You can watch basic flows on Postman on [Youtube video](https://www.youtube.com/watch?v=5-lIgqEJEjw&ab_channel=V%C5%A9MinhTi%E1%BA%BFn) which I posted.
    * You need to follow these steps as a new user:
        * **Step 1**. Create a new account (If you already have one, skip this step. Next step 2).
        * **Step 2**. Login with your created account to get a new token in API `/api/auth/login`.
