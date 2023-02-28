@@ -39,7 +39,7 @@ If you clone this project and run it on your local. Ensure your laptop/computer 
 1. Clone this project
 2. Run `rake db:migrate`
 3. Run `rails server`
-4. If you want to test your local, import [my Postman collection](https://github.com/minhtienvu/url_shortener/blob/master/Oivan_url_shortened.postman_collection.json) to test in `Local` folder 
+4. If you want to test your local, import [my Postman collection](https://github.com/minhtienvu/url_shortener/blob/master/Oivan_url_shortened.postman_collection.json) to your Postman application, run tests in `Local` collection.
 
 ---
 ### API Documentation
@@ -106,8 +106,8 @@ If you clone this project and run it on your local. Ensure your laptop/computer 
 
 ## How to test my application
 I attached my Postman collection on this project. You can [download at this link](https://github.com/minhtienvu/url_shortener/blob/master/Oivan_url_shortened.postman_collection.json) and import it to your Postman application to test it easily : 
-- `Local` folder: If you clone this project and test it on your local
-- `Heroku` folder: If you want to use my project on the Heroku server
+- `Local` collection: If you clone this project and test it on your local
+- `Heroku` collection: If you want to use my project on the Heroku server
 
 #### For public features
    * You can use some features without creating an account at [these list](https://github.com/minhtienvu/url_shortener/edit/master/README.md#public-features).
