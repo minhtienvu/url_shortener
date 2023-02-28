@@ -3,6 +3,18 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
 
   describe 'validations' do
+    context "Validate name" do
+      context "Validate presence of name" do
+        it 'name is empty' do
+          # Return false
+        end
+
+        it 'name is present' do
+          # Return true
+        end
+      end
+    end
+
     context "Validate email" do
       context "Validate presence of email" do
         it 'email is empty' do
