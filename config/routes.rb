@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   root to: 'links#index'
 
-  post '/index', defaults: { format: 'json' }, to: 'links#index'
-  post '/encode', defaults: { format: 'json' }, to: 'links#encode'
+  get '/index', defaults: { format: 'json' }, to: 'links#index'
+  get '/encode', defaults: { format: 'json' }, to: 'links#encode'
   get '/decode', defaults: { format: 'json' }, to: 'links#decode'
 
   ## For external API
